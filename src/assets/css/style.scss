@@ -1,0 +1,85 @@
+// out: ./styl.css, compress: true, sourceMap: true
+@import "normalize", "rem", "font", "color", "mixin", "default";
+
+/* basic */
+$min-width: 320px;
+$img-url: "../images";
+$screen-size-pc: 1200px;
+
+* {
+    // @include ani(0.3s);
+}
+
+.ajax-file-upload-container {
+    font-size: 14px;
+}
+
+html {
+    min-width: $min-width;
+    max-width: 100%;
+    font-size: 14px;
+    height: -webkit-fill-available;
+}
+
+body,
+html {
+    font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
+
+    @media (max-width: ($screen-size-pc - 1px)) {
+        &.lock {
+            height: 100vh;
+            overflow: hidden;
+        }
+    }
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+
+    .container {
+        @include container(100%);
+        text-align: left;
+        vertical-align: top;
+        padding: 0 15px;
+
+        @media (min-width: $screen-size-pc) {
+            @include container($screen-size-pc);
+            padding: 0;
+        }
+    }
+
+    /* header */
+    header {
+        .container {
+
+
+
+
+        }
+    }
+
+
+    div#content {
+
+        /* MAIN */
+        &.main {
+
+
+
+        }
+
+        /* SUB */
+        &.sub {
+
+        }
+    }
+
+
+    footer#footer {
+        div.container {
+            
+
+        }
+    }
+}
